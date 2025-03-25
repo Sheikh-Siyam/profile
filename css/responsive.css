@@ -71,6 +71,13 @@ margin-top: 30px;
 }
 
 /* Extra Small (Mobile Portrait) */
-@media (max-width: 575px) {
-  /* CSS styles for small screens */
+@media (max-width: 475px) {
+  .hero-section .details p {
+    font-size: 26px;
+}
+
+.hero-section .details p span {
+  font-size: 33px;
+  color: gray;
+}
 }
