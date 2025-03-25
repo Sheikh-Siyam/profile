@@ -124,13 +124,13 @@ gsap.fromTo(".about-me p",
 
 
 // Contact through WhatsApp 
-gsap.to(".contact-me img", {
+gsap.to(".contact-me a", {
   opacity: 1,
   y: 0,
   duration: 1,
   ease: "power2.out",
   scrollTrigger: {
-    trigger: ".contact-me img",
+    trigger: ".contact-me a",
     start: "top 80%", // When the section title is 80% into the viewport
     toggleActions: "play none none none"
   }
