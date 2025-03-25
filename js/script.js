@@ -83,17 +83,17 @@ gsap.fromTo(".service-items",
 );
 
 // Scroll animation for the section title
-gsap.to(".section-title", {
-  opacity: 1,
-  y: 0,
-  duration: 1,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".section-title",
-    start: "top 80%", // When the section title is 80% into the viewport
-    toggleActions: "play none none none"
+gsap.fromTo(".section-title",
+  { opacity: 0, y: 0 },
+  {
+    opacity: 1, y: 50, duration: 1, ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".section-title",
+      start: "top 80%",
+      toggleActions: "play none none none"
+    }
   }
-});
+);
 
 
 // Skill section 
@@ -124,14 +124,14 @@ gsap.fromTo(".about-me p",
 
 
 // Contact through WhatsApp 
-gsap.to(".contact-me a", {
-  opacity: 1,
-  y: 0,
-  duration: 1,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".contact-me a",
-    start: "top 80%", // When the section title is 80% into the viewport
-    toggleActions: "play none none none"
+gsap.fromTo(".contact-me a",
+  { opacity: 0, y: 0 },
+  {
+    opacity: 1, y: 50, duration: 1, ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".contact-me a",
+      start: "top 80%",
+      toggleActions: "play none none none"
+    }
   }
-});
+);
