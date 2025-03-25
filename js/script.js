@@ -121,3 +121,17 @@ gsap.fromTo(".about-me p",
     }
   }
 );
+
+
+// Contact through WhatsApp 
+gsap.to(".contact-me img", {
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".contact-me img",
+    start: "top 80%", // When the section title is 80% into the viewport
+    toggleActions: "play none none none"
+  }
+});
