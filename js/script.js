@@ -125,9 +125,9 @@ gsap.fromTo(".about-me p",
 
 // Contact through WhatsApp 
 gsap.fromTo(".contact-me a",
-  { opacity: 0, y: 0 },
+  { opacity: 0, y: -50 },
   {
-    opacity: 1, y: 50, duration: 1, ease: "power3.out",
+    opacity: 1, y: 0, duration: 1, ease: "power3.out",
     scrollTrigger: {
       trigger: ".contact-me a",
       start: "top 80%",
