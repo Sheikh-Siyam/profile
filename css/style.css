@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common css  */
+.section-gap {
+    padding: 120px 0;
+}
+
+.bg-section {
+    background-color: #dcdcdc26;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 60px;
+    font-family: auto;
+    margin-bottom: 50px;
+}
+
+/* From Uiverse.io by alexmaracinaru */
+.hire-me-btn {
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 12px 20px;
+    border-radius: 100px;
+    background: gainsboro;
+    border: 1px solid transparent;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    display: inline;
+}
+
+.hire-me-btn:hover {
+    background: gainsboro;
+    color: black;
+}
+
+.hire-me-btn>svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hire-me-btn:hover svg {
+    transform: translateX(5px);
+}
+
+.hire-me-btn:active {
+    transform: scale(0.95);
+}
+
+
+
+/* Navbar starts  */
+.cus-navbar {
+    display: flex;
+    justify-content: space-between;
+    background: gainsboro;
+    padding: 0 55px;
+    border-radius: 70px;
+    width: 87%;
+    margin: auto;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* transition: width 0.1s ease-in-out; */
+    z-index: 999;
+}
+
+.cus-navbar .logo {
+    text-decoration: none;
+    color: gray;
+    font-size: 30px;
+    padding: 15px 0px;
+}
+
+.cus-navbar .menu {
+    margin-top: 15px;
+    display: flex;
+    /* transition: max-height 0.3s ease-in-out; */
+
+}
+
+.cus-navbar li {
+    list-style: none;
+    display: inline;
+}
+
+.cus-navbar li a {
+    text-decoration: none;
+    display: block;
+    padding: 0 14px;
+    font-size: 18px;
+    color: gray;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cus-navbar li a:hover {
+    transform: scale(1.1) !important;  
+    font-weight: 700;
+}
+
+.hamburger{
+    border: none;
+    background: none;
+    font-size: 25px;
+    color: gray;
+    border: 3px solid gray;
+    padding: 0 6px;
+    border-radius: 7px;
+    display: none;
+}
+
+/* Navbar ends  */
+
+/* hero section starts */
+.hero-section .sections{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section .details {
+    height: 100%;
+    align-content: space-around;
+}
+
+.hero-section .details p {
+    font-size: 35px;
+}
+
+.hero-section .details p span {
+    font-size: 50px;
+    color: gray;
+}
+
+/* hero section ends */
+
+/* Service section starts  */
+
+.services .service-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.text-container {
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.read-more-btn {
+    color: blue;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+.services .card img {
+    height: 180px;
+}
+
+.service-items {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.services .section-title {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+/* Service section ends */
+
+/* Skill section starts  */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    opacity: 0;
+}
+
+.skill-card {
+    width: 200px;
+    height: 150px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* transform: scale(0.8); */
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-card h4 {
+    margin: 0;
+}
+/* Skill section ends */
+
+/* Contact me section starts */
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.whatsapp-button:hover {
+    background-color: #1EBE5D;
+    color: white;
+}
+.whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+/* Contact me section ends */
+
+/* footer section starts */
+.footer{
+    background-color: gainsboro;
+    text-align: center;
+}
+.footer p{
+    font-size: 15px;
+    padding: 20px 0;
+    color: gray;
+    font-weight: 500;
+}
+/* footer section ends */

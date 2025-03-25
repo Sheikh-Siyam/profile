@@ -1,0 +1,76 @@
+/* Ultra Large (Large Desktop / Full HD) */
+@media (min-width: 1600px) {
+  /* CSS styles for large screens */
+}
+
+/* Extra Large (Desktop) */
+@media (min-width: 1200px) {
+  /* CSS styles for desktop screens */
+}
+
+/* Large (Tablet Landscape) */
+@media (max-width: 1199px) {
+  /* CSS styles for larger tablets and smaller desktops */
+}
+
+/* Medium (Tablet Portrait) */
+@media (max-width: 991px) {
+  .hero-section .details p {
+    font-size: 30px;
+}
+
+.hero-section .details p span {
+  font-size: 40px;
+  color: gray;
+}
+}
+
+@media (max-width:886px) {
+  .cus-navbar {
+    border-radius: 0;
+    width: 100%;
+  }
+}
+
+/* Small (Mobile Landscape) */
+@media (max-width: 767px) {
+  .cus-navbar .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    padding-left: 15px;
+    background: gainsboro;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+    gap: 7px;
+    padding-left: 48px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu.active {
+    display: flex;
+    max-height: 300px;
+    padding-bottom: 12px;
+  }
+
+  /* hero section  */
+  .hero-section .sections{
+    justify-content: space-evenly;
+}
+
+.hero-section .sections img{
+margin-top: 30px;
+}
+}
+
+/* Extra Small (Mobile Portrait) */
+@media (max-width: 575px) {
+  /* CSS styles for small screens */
+}
